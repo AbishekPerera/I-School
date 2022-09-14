@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">I_School</string>
+    <string name="app_name">I School</string>
+    <string name="login_reg_wellcome_msg">Welcome to I School</string>
+    <string name="login_btn">Login</string>
+    <string name="NewUser_txt">New User?</string>
+    <string name="Reg_btn">Register</string>
+    <string name="Logo_img">Logo PNG</string>
+    <string name="Email_textV">Email</string>
+    <string name="Email_text_input">enter your email here</string>
+    <string name="Password_textV">Password</string>
+    <string name="Password_text_input">enter your password</string>
+    <string name="Password_fgt_textV">Fogoot PAssword?</string>
 </resources>
