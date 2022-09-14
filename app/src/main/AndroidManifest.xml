@@ -16,11 +16,11 @@
         <activity
             android:name=".loginReg"
             android:exported="false"
-            android:theme="@style/Theme.ISchool.NoActionBar"/>
+            android:theme="@style/Theme.I_School.NoActionBar"/>
         <activity
             android:name=".login_page"
             android:exported="false"
-            android:theme="@style/Theme.ISchool.NoActionBar"/>
+            android:theme="@style/Theme.I_School.NoActionBar"/>
         <activity
             android:name=".landingPageNew"
             android:exported="false" />
@@ -30,7 +30,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.ISchool.NoActionBar">
+            android:theme="@style/Theme.I_School.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
