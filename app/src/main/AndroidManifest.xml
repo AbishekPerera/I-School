@@ -13,14 +13,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.I_School"
         tools:targetApi="31">
+<!--        <activity-->
+<!--            android:name=".tempAct"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".RocketTimeTable"
+            android:exported="false"
+            android:theme="@style/Theme.I_School.NoActionBar"/>
+        <activity
+            android:name=".Navigation_Drawer"
+            android:exported="false" />
         <activity
             android:name=".loginReg"
             android:exported="false"
-            android:theme="@style/Theme.I_School.NoActionBar"/>
+            android:theme="@style/Theme.I_School.NoActionBar" />
         <activity
             android:name=".login_page"
             android:exported="false"
-            android:theme="@style/Theme.I_School.NoActionBar"/>
+            android:theme="@style/Theme.I_School.NoActionBar" />
         <activity
             android:name=".landingPageNew"
             android:exported="false" />
