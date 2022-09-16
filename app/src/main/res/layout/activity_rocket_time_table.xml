@@ -10,19 +10,42 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/pllblue"
         android:orientation="vertical">
 
-        <include layout="@layout/main_toolbar"/>
+        <include layout="@layout/main_toolbar" />
 
-        <TextView
+        <CalendarView
+            android:id="@+id/calendarView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Rocket"
-            android:textSize="50sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:gravity="center"/>
-            
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:ems="10"
+            android:hint="Select Date"
+            android:inputType="textPersonName"
+            android:shadowColor="#000000"
+            android:shadowDx="20"
+            android:textAlignment="center"
+            android:textColorHint="@color/plblue" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:backgroundTint="@color/teal_200"
+            android:text="Select"
+            app:cornerRadius="50dp" />
+
     </LinearLayout>
     
     <RelativeLayout
