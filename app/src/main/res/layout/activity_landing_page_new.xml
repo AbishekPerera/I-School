@@ -112,7 +112,8 @@
             app:cardBackgroundColor="#e0fbfc"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
-            app:cardUseCompatPadding="true">
+            app:cardUseCompatPadding="true"
+            android:onClick="ClickRocket">
 
             <LinearLayout
                 android:layout_width="wrap_content"

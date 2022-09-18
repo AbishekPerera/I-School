@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent dsp = new Intent(MainActivity.this,landingPageNew.class);
+                Intent dsp = new Intent(MainActivity.this,RocketTimetableList.class);
                 startActivity(dsp);
                 finish();
             }
