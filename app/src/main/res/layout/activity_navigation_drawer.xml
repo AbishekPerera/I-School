@@ -24,14 +24,13 @@
             android:layout_gravity="center"/>
         
     </LinearLayout>
-    
+
     <RelativeLayout
         android:layout_width="300dp"
         android:layout_height="match_parent"
-        android:background="@color/pllblue"
         android:gravity="start">
 
-        <include layout="@layout/main_navigation_drawer"/>
+        <include layout="@layout/main_navigation_drawer" />
     </RelativeLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
