@@ -2,143 +2,154 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/pllblue">
+    android:background="@drawable/navbar_bg"
+    android:orientation="vertical">
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_margin="17dp"
         android:onClick="ClickLogo"
-        android:src="@drawable/ic_my_account"/>
+        android:src="@drawable/pp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="User Name"
-        android:textStyle="bold"
+        android:text="@string/UserName_txtV"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="22sp"
-        android:textColor="@color/black"
-        android:textAlignment="center"/>
+        android:textStyle="bold" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="17dp"
-        android:background="@color/black"/>
+        android:background="@color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="Clickhome">
+        android:onClick="Clickhome"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:text="Home"
             android:padding="12dp"
-            android:layout_marginStart="16dp"/>
+            android:text="@string/Home_txtV"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="50dp"
-            android:src="@drawable/ic_home_icon"/>
+            android:src="@drawable/ic_home_icon" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickmyNotes">
+        android:onClick="ClickmyNotes"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:text="My Notes"
             android:padding="12dp"
-            android:layout_marginStart="16dp"/>
+            android:text="@string/My_Notes"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="50dp"
-            android:src="@drawable/ic_my_notes"/>
+            android:src="@drawable/ic_my_notes" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="Clicktodo">
+        android:onClick="Clicktodo"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:text="To-Do"
             android:padding="12dp"
-            android:layout_marginStart="16dp"/>
+            android:text="@string/To_Do_txtV"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="50dp"
-            android:src="@drawable/ic_to_do"/>
+            android:src="@drawable/ic_to_do" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickRocket">
+        android:onClick="ClickRocket"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_weight="1"
+            android:padding="12dp"
             android:text="Rocket Time-Table"
-            android:padding="12dp"
-            android:layout_marginStart="16dp"/>
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="50dp"
-            android:src="@drawable/ic_rocket_time"/>
+            android:src="@drawable/ic_rocket_time" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickDictionary">
+        android:onClick="ClickDictionary"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:text="Dictionary"
             android:padding="12dp"
-            android:layout_marginStart="16dp"/>
+            android:text="@string/Dictionary_txtV"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="50dp"
-            android:src="@drawable/ic_dictionary"/>
+            android:src="@drawable/ic_dictionary" />
 
     </LinearLayout>
 
@@ -146,70 +157,76 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickCal">
+        android:onClick="ClickCal"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_weight="1"
+            android:padding="12dp"
             android:text="Calculator"
-            android:padding="12dp"
-            android:layout_marginStart="16dp"/>
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="50dp"
-            android:src="@drawable/ic_calculator"/>
+            android:src="@drawable/ic_calculator" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickOR">
+        android:onClick="ClickOR"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:text="QR"
             android:padding="12dp"
-            android:layout_marginStart="16dp"/>
+            android:text="@string/QR_Code_txtV"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="50dp"
-            android:src="@drawable/ic_qr"/>
+            android:src="@drawable/ic_qr" />
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/loOutNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
-        >
+        android:onClick="ClickLogout"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:text="Settings"
             android:padding="12dp"
-            android:textStyle="bold"
-            android:layout_marginStart="16dp"/>
+            android:text="Logout"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="50dp"
-            android:src="@drawable/ic_baseline_settings_24"/>
+            android:src="@drawable/ic_baseline_settings_24" />
 
     </LinearLayout>
 

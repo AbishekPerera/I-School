@@ -14,14 +14,16 @@
         android:theme="@style/Theme.I_School"
         tools:targetApi="31">
         <activity
-            android:name=".RocketTimeTableUpdate"
+            android:name=".RegisterPage"
             android:exported="false" />
+        <activity
+            android:name=".RocketTimeTableUpdate"
+            android:exported="false"
+            android:theme="@style/Theme.I_School.NoActionBar" />
         <activity
             android:name=".RocketTimeTableView"
-            android:exported="false" />
-        <activity
-            android:name=".RocketTimeTableCard"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.I_School.NoActionBar" />
         <activity
             android:name=".RocketTimetableList"
             android:exported="false"
@@ -38,14 +40,15 @@
         <activity
             android:name=".loginReg"
             android:exported="false"
-            android:theme="@style/Theme.I_School.NoActionBar" />
+            android:theme="@style/Theme.I_School.NoActionBar"></activity>
         <activity
             android:name=".login_page"
             android:exported="false"
             android:theme="@style/Theme.I_School.NoActionBar" />
         <activity
             android:name=".landingPageNew"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.I_School.NoActionBar" />
         <activity
             android:name=".LandingPage"
             android:exported="false" />

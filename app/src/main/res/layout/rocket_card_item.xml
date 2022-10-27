@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mrocketLay"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="100dp"
     android:layout_gravity="center_vertical"
+    android:layout_margin="10dp"
     android:background="@drawable/login_btn"
+    android:elevation="10dp"
     android:orientation="horizontal"
     android:padding="12dp">
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/rocketViewTime"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_weight="2"
-        android:text="12.00am\nTo\n1.00am"
+        android:gravity="center_vertical"
+        android:text="90"
         android:textAlignment="center"
-        android:textSize="16sp" />
+        android:textSize="24sp" />
 
     <View
         android:id="@+id/divider"
@@ -32,17 +36,18 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/rocketViewTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Biology Tute 2"
+            android:padding="10dp"
+            android:text="@string/Rocket_TT_Card_Title_txtV"
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/rocketViewDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="biological View "
+            android:text="@string/Rocket_TT_Card_Title_txtV"
             android:textSize="16sp" />
 
     </LinearLayout>

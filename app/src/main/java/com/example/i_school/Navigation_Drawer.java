@@ -8,10 +8,14 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Navigation_Drawer extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
+    private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +23,8 @@ public class Navigation_Drawer extends AppCompatActivity {
         setContentView(R.layout.activity_navigation_drawer);
 
         drawerLayout=findViewById(R.id.drawer);
+        firebaseAuth=FirebaseAuth.getInstance();
+
     }
 
     public void ClickMenu(View view){
@@ -43,9 +49,6 @@ public class Navigation_Drawer extends AppCompatActivity {
         recreate();
     }
 
-
-
-
     public void ClickmyNotes(View view){
         redirectActivity(this,LandingPage.class);
     }
@@ -67,14 +70,23 @@ public class Navigation_Drawer extends AppCompatActivity {
     }
 
     public void ClickOR(View view){
-        redirectActivity(this,LandingPage.class);
+        redirectActivity(this,loginReg.class);
+    }
+
+    public void ClickLogout(View view){
+        redirectActivity(this,loginReg.class);
+        firebaseAuth.signOut();
+
     }
 
 
 
 
 
+
+
     public static void redirectActivity(Activity activity,Class Class){
+
         Intent intent = new Intent(activity,Class);
 
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

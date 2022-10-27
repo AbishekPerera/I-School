@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center_vertical"
     android:orientation="horizontal"
-    android:padding="12dp"
+    android:padding="12dp" android:elevation="10dp"
     android:background="@color/pblue">
 
     <ImageView
@@ -17,7 +17,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="i School"
+        android:text="@string/iSchool_simple_txtV"
         android:textAlignment="center"
         android:textColor="@color/pllblue"
         android:textSize="22sp"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mainbgpllb"
+    android:background="@drawable/bgbg"
     tools:context=".landingPageNew">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="i School"
+        android:text="@string/iSchoolName"
         android:textColor="@color/pblue"
         android:textSize="48sp"
         android:textStyle="bold" />
@@ -21,11 +21,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/textView"
+        android:layout_margin="10dp"
         android:layout_marginTop="20dp"
         android:columnCount="2"
-        android:rowCount="3"
-        android:layout_margin="10dp"
-        >
+        android:rowCount="3">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -35,7 +34,7 @@
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="#e0fbfc"
+            app:cardBackgroundColor="#EEE0FBFC"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -46,18 +45,18 @@
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:gravity="center"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/ic_my_notes"/>
+                    android:src="@drawable/ic_my_notes" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="My Notes"
-                    android:textSize="16sp"
-                    android:textColor="@color/pblue"/>
-
+                    android:text="@string/My_Notes"
+                    android:textColor="@color/pblue"
+                    android:textSize="16sp" />
 
 
             </LinearLayout>
@@ -72,7 +71,7 @@
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="#e0fbfc"
+            app:cardBackgroundColor="#DFE0FBFC"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -83,18 +82,18 @@
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:gravity="center"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/ic_to_do"/>
+                    android:src="@drawable/ic_to_do" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="To-Do"
-                    android:textSize="16sp"
-                    android:textColor="@color/pblue"/>
-
+                    android:text="@string/To_Do_txtV"
+                    android:textColor="@color/pblue"
+                    android:textSize="16sp" />
 
 
             </LinearLayout>
@@ -109,11 +108,11 @@
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="#e0fbfc"
+            android:onClick="ClickRocket"
+            app:cardBackgroundColor="#EDE0FBFC"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
-            app:cardUseCompatPadding="true"
-            android:onClick="ClickRocket">
+            app:cardUseCompatPadding="true">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -130,11 +129,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rocket\nTime Table"
+                    android:text="@string/Rocket_Time_Table_txtV"
                     android:textAlignment="center"
-                    android:textSize="16sp"
-                    android:textColor="@color/pblue"/>
-
+                    android:textColor="@color/pblue"
+                    android:textSize="16sp" />
 
 
             </LinearLayout>
@@ -149,7 +147,7 @@
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="#e0fbfc"
+            app:cardBackgroundColor="#F2E0FBFC"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -160,18 +158,18 @@
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:gravity="center"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/ic_dictionary"/>
+                    android:src="@drawable/ic_dictionary" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dictionary"
-                    android:textSize="16sp"
-                    android:textColor="@color/pblue"/>
-
+                    android:text="@string/Dictionary_txtV"
+                    android:textColor="@color/pblue"
+                    android:textSize="16sp" />
 
 
             </LinearLayout>
@@ -197,18 +195,18 @@
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:gravity="center"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/ic_calculator"/>
+                    android:src="@drawable/ic_calculator" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Scentific\nCalculator"
-                    android:textSize="16sp"
-                    android:textColor="@color/pblue"/>
-
+                    android:text="@string/Scentific_Calculator_txtV"
+                    android:textColor="@color/pblue"
+                    android:textSize="16sp" />
 
 
             </LinearLayout>
@@ -234,24 +232,23 @@
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:gravity="center"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/ic_qr"/>
+                    android:src="@drawable/ic_qr" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="QR Code"
-                    android:textSize="16sp"
-                    android:textColor="@color/pblue"/>
-
+                    android:text="@string/QR_Code_txtV"
+                    android:textColor="@color/pblue"
+                    android:textSize="16sp" />
 
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-
 
 
     </GridLayout>

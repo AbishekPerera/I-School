@@ -7,6 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+<!--    Theme Colors -->
     <color name="pblue">#3d5a80</color>
     <color name="plblue">#98c1dc</color>
     <color name="pllblue">#e0fbfc</color>
