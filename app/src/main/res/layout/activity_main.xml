@@ -13,6 +13,7 @@
         android:layout_width="276dp"
         android:layout_height="257dp"
         android:layout_gravity="center"
+        android:contentDescription="@string/Logo_img"
         android:outlineAmbientShadowColor="@color/black"
         android:src="@drawable/logopng" />
 
