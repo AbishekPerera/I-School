@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mrocketLay"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/login_btn"
+    android:elevation="10dp"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+
+    <TextView
+        android:id="@+id/rocketViewTime"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:text="90"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@color/pred" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rocketViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/Rocket_TT_Card_Title_txtV"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/rocketViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Rocket_TT_Card_Title_txtV"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
