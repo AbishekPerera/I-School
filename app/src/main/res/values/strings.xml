@@ -101,4 +101,30 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="iSchoolName">I School</string>
+    <string name="My_Notes">My Notes</string>
+    <string name="To_Do_txtV">To-Do</string>
+    <string name="Rocket_Time_Table_txtV">Rocket\nTime Table</string>
+    <string name="Dictionary_txtV">Dictionary</string>
+    <string name="Scentific_Calculator_txtV">Scentific\nCalculator</string>
+    <string name="QR_Code_txtV">QR Code</string>
+    <string name="Select_Date_txtV">Select Date</string>
+    <string name="Select_btn">Select</string>
+    <string name="Total_Used_txtV">Total Used \n9h 5min</string>
+    <string name="Total_Wasted_txtV">Total Wasted \n14h 55min</string>
+    <string name="rocket_TT_hour">12.00am\nTo\n1.00am</string>
+    <string name="Rocket_TT_Card_Title_txtV">Biology Tute 2</string>
+    <string name="Rocket_TT_Des_txtV">"biological View"</string>
+    <string name="Rocket_TT_Des_txtV2">"biological View "</string>
+    <string name="Time_txtV">Time</string>
+    <string name="Title_txtV">Title</string>
+    <string name="Description_txtV">Description</string>
+    <string name="Save_btn">Save</string>
+    <string name="Update_btn">Update</string>
+    <string name="Delete_btn">Delete</string>
+    <string name="iSchool_simple_txtV">i School</string>
+    <string name="UserName_txtV">Lochi Perera</string>
+    <string name="Home_txtV">Home</string>
+    <string name="Rocket_Time_Table_NoN_txtV" />
+    <string name="Settings_txtV">Settings</string>
 </resources>
