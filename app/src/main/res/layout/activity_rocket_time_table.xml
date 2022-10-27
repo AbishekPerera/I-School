@@ -10,40 +10,44 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/pllblue"
+        android:background="@drawable/bg5"
         android:orientation="vertical">
 
         <include layout="@layout/main_toolbar" />
 
         <CalendarView
-            android:id="@+id/calendarView"
+            android:id="@+id/rocketcalendarView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/calenderbg"
+            android:elevation="10dp" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName"
+        <TextView
+            android:id="@+id/rocketSetdateTextVv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="40dp"
             android:ems="10"
-            android:hint="Select Date"
-            android:inputType="textPersonName"
             android:shadowColor="#000000"
             android:shadowDx="20"
+            android:text="@string/Select_Date_txtV"
             android:textAlignment="center"
-            android:textColorHint="@color/plblue" />
+            android:textColorHint="#AD4B5587"
+            android:textSize="24sp" />
+
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/rocketSelectDateBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="40dp"
             android:backgroundTint="@color/teal_200"
-            android:text="Select"
+            android:text="@string/Select_btn"
             app:cornerRadius="50dp" />
 
     </LinearLayout>
@@ -55,7 +59,7 @@
         android:background="@color/white"
         >
 
-        <include layout="@layout/main_navigation_drawer"/>
+        <include layout="@layout/main_navigation_drawer" />
 
 
 
