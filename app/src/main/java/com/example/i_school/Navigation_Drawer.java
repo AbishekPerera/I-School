@@ -21,16 +21,13 @@ public class Navigation_Drawer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
-
         drawerLayout=findViewById(R.id.drawer);
         firebaseAuth=FirebaseAuth.getInstance();
 
     }
-
     public void ClickMenu(View view){
         openDrawer(drawerLayout);
     }
-
     public static void openDrawer(DrawerLayout drawerLayout) {
         drawerLayout.openDrawer(GravityCompat.START);
     }
@@ -78,21 +75,12 @@ public class Navigation_Drawer extends AppCompatActivity {
         firebaseAuth.signOut();
 
     }
-
-
-
-
-
-
-
     public static void redirectActivity(Activity activity,Class Class){
 
         Intent intent = new Intent(activity,Class);
-
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         activity.startActivity(intent);
     }
-
 
     @Override
     protected void onPause() {

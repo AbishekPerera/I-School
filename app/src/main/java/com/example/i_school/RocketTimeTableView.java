@@ -72,7 +72,8 @@ public class RocketTimeTableView extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"Time must between 0-60",Toast.LENGTH_SHORT).show();
                     }
                     else {
-                        DocumentReference documentReference=firebaseFirestore.collection("RocketTimes").document(firebaseUser.getUid()).collection("RocketTasks").document();
+                        DocumentReference documentReference=firebaseFirestore.collection("RocketTimes")
+                                .document(firebaseUser.getUid()).collection("RocketTasks").document();
                         Map<String ,Object> RocketTime= new HashMap<>();
                         RocketTime.put("time",time);
                         RocketTime.put("date",date);

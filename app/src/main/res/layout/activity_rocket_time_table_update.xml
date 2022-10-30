@@ -36,7 +36,8 @@
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/Time_txtV" />
+                android:text="@string/Time_txtV"
+                android:textColor="@color/pblack" />
 
             <EditText
                 android:id="@+id/update_rocketViewTime"
@@ -44,13 +45,15 @@
                 android:layout_height="50dp"
                 android:ems="10"
                 android:hint="45min"
-                android:inputType="time" />
+                android:inputType="time"
+                android:textColor="@color/ic_launcher_background" />
 
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/Title_txtV" />
+                android:text="@string/Title_txtV"
+                android:textColor="@color/pblack" />
 
             <EditText
                 android:id="@+id/update_rocketViewTitle"
@@ -58,13 +61,15 @@
                 android:layout_height="50dp"
                 android:ems="10"
                 android:hint="Biology tiute 02"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColor="@color/pblue" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/Description_txtV" />
+                android:text="@string/Description_txtV"
+                android:textColor="@color/pblack" />
 
             <EditText
                 android:id="@+id/update_rocketViewDescription"
@@ -73,7 +78,8 @@
                 android:ems="10"
                 android:gravity="top|left"
                 android:hint="completed tute 02 all questions"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColor="@color/pblue" />
 
             <Button
                 android:id="@+id/update_rocketBtn"

@@ -27,7 +27,7 @@ public class RocketTimeTableUpdate extends AppCompatActivity {
      String crntDate,docId,Title,Description,sTime;
      EditText rocketViewTime,rocketViewTitle,rocketViewDescription;
      Button update_rocketBtn,delete_rocketBtn;
-    DrawerLayout drawerLayout;
+     DrawerLayout drawerLayout;
 
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
