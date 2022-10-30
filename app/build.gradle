@@ -44,4 +44,7 @@ dependencies {
     implementation "androidx.drawerlayout:drawerlayout:1.1.1"
 
     implementation 'com.firebaseui:firebase-ui-firestore:8.0.2'
+
+    //Add required library
+    implementation 'com.google.mlkit:barcode-scanning:17.0.2'
 }
