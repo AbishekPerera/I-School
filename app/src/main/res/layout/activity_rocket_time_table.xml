@@ -35,8 +35,10 @@
             android:shadowDx="20"
             android:text="@string/Select_Date_txtV"
             android:textAlignment="center"
-            android:textColorHint="#AD4B5587"
-            android:textSize="24sp" />
+            android:textColor="#0B1149"
+            android:textColorHint="#AD002AFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
 
         <Button
