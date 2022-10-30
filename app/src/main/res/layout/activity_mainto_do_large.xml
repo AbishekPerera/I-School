@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="0dp"
+    android:layout_marginTop="0dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg6"
+    android:paddingLeft="0dp"
+    tools:context=".activity.MainActivity">
+
+    <include layout="@layout/main_toolbar">
+
+        <TextView
+            android:id="@+id/todo_pg_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="@string/todo_text_string"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+    </include>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+
+                fontPath="fonts/nunito_extra_bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/To_do_all_task_text"
+                android:textColor="@color/colorBlack"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/calendar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center"
+            android:background="@drawable/calendar" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:id="@+id/noDataImage"
+                android:layout_gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/taskRecycler"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/addTask"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="0.5"
+            android:drawableLeft="@drawable/ic_add_black_24dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/rounded_corner"
+            android:paddingTop="4dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="1dp"
+            android:text="@string/add_button_txt"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
