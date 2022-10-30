@@ -1,14 +1,15 @@
 package com.example.i_school;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -20,6 +21,7 @@ public class RegisterPage extends AppCompatActivity {
 
     private EditText memail,mpassword;
     private Button mregBtn;
+    private TextView mbacktologin;
 
     private FirebaseAuth firebaseAuth;
 
@@ -31,8 +33,17 @@ public class RegisterPage extends AppCompatActivity {
         memail = findViewById(R.id.reg_email);
         mpassword = findViewById(R.id.regpassword);
         mregBtn = findViewById(R.id.regnowbtn);
+        mbacktologin = findViewById(R.id.Login_page_fogtpw_textView);
 
         firebaseAuth= FirebaseAuth.getInstance();
+
+        mbacktologin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(RegisterPage.this, login_page.class);
+                startActivity(intent);
+            }
+        });
 
         mregBtn.setOnClickListener(new View.OnClickListener() {
             @Override
