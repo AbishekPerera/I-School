@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "628756331443",
+    "project_id": "ischool-8c497",
+    "storage_bucket": "ischool-8c497.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628756331443:android:c72a3ea1200d444cf369c6",
+        "android_client_info": {
+          "package_name": "com.example.i_school"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628756331443-vk869lkpi92vcjs2ojvd123p8dgqq3ga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn5dP799W6wC4jU6wic0Z0udXHiAkn5Kg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628756331443-vk869lkpi92vcjs2ojvd123p8dgqq3ga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
