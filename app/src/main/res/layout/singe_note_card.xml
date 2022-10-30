@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mnoteLay"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/login_btn"
+    android:elevation="10dp"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+
+    <TextView
+        android:id="@+id/noteViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="2"
+
+        android:gravity="center"
+
+        android:text="Title"
+        android:textColor="@color/pblack"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height= "5dp"
+        android:layout_margin="5dp"
+        android:background="@color/pred" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/noteViewDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/Rocket_TT_Card_Title_txtV"
+            android:textColor="@color/pblue"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
