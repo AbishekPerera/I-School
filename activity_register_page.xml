@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pblue"
+    tools:context=".RegisterPage">
+
+    <ImageView
+        android:id="@+id/Login_page_logo"
+        android:layout_width="353dp"
+        android:layout_height="262dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="47dp"
+        android:contentDescription="@string/Logo_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logopng" />
+
+    <TextView
+        android:id="@+id/Login_page_Email_textView"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="172dp"
+        android:text="@string/Email_textV"
+        android:textColor="@color/pllblue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login_page_logo" />
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="297dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="46dp"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:ems="10"
+        android:hint="@string/Email_text_input"
+        android:textColor="@color/pllblue"
+        android:textColorHint="#88FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login_page_Email_textView"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/Login_page_pw_textView"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="173dp"
+        android:text="@string/Password_textV"
+        android:textColor="@color/pllblue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_email" />
+
+    <EditText
+        android:id="@+id/regpassword"
+        android:layout_width="297dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="46dp"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:ems="10"
+        android:hint="@string/Password_text_input"
+        android:textColor="@color/pllblue"
+        android:inputType="textPassword"
+        android:textColorHint="#83FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login_page_pw_textView" />
+
+    <TextView
+        android:id="@+id/Login_page_fogtpw_textView"
+        android:layout_width="200dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="231dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="37dp"
+        android:text="Already have a account ?"
+        android:textColor="@color/plblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regpassword"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/regnowbtn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="96dp"
+        android:background="@drawable/login_btn"
+        android:insetLeft="0dp"
+        android:text="Register"
+        android:textColor="@color/pblue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login_page_fogtpw_textView" />
+
+
+
+    <ProgressBar
+        android:id="@+id/LoginProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"
+        app:layout_constraintVertical_bias="0.77" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
