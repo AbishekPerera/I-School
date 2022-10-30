@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_QR_View"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QRgen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgbg"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            tools:context=".QRgen">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!--TextView: Label-->
+                <TextView
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Barcode QR Code Scanner"
+                    android:textAlignment="center"
+                    android:textColor="@color/pblack"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <!--Button: Take an image from camera to scan Barcode/QR code-->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/cameraBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#3A9E04"
+                        android:text="Camera"
+                        android:textSize="16sp"
+                        app:cornerRadius="50dp" />
+
+                    <!--Button:Pick an image from camera to scan Barcode/QR code-->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/galleryBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/purple_200"
+                        android:text="Gallery"
+                        android:textSize="16sp"
+                        app:cornerRadius="50dp" />
+
+                </LinearLayout>
+
+                <!--ImageView: Show the image picked from Camera/Gallery-->
+                <ImageView
+                    android:id="@+id/imageIv"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_qr" />
+
+                <!--Button:After picking an image from Camera/gallery scan the Barcode/QR-->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/scanBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_200"
+                    android:padding="10dp"
+                    android:text="Scan"
+                    android:textSize="16sp"
+                    app:cornerRadius="50dp" />
+
+                <!--TextView: Label-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Result:"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <!--TextView: Show the scanned result fromBarcode/QR code-->
+                <TextView
+                    android:id="@+id/resultTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C4F6F6F6" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        >
+
+        <include layout="@layout/main_navigation_drawer" />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+

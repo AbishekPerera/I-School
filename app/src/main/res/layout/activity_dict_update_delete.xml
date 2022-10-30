@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_dict_Update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DictUpdateDelete"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg8"
+        tools:context=".DictUpdateDelete">
+
+        <include
+            layout="@layout/main_toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="669dp"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            android:padding="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Word"
+                android:textColor="@color/pblack" />
+
+            <EditText
+                android:id="@+id/update_dictViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Biology tiute 02"
+                android:inputType="textPersonName"
+                android:textColor="@color/pblue" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Description_txtV"
+                android:textColor="@color/pblack" />
+
+            <EditText
+                android:id="@+id/update_dictViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:ems="10"
+                android:gravity="top|left"
+                android:hint="completed tute 02 all questions"
+
+                android:textColor="@color/pblue" />
+
+            <Button
+                android:id="@+id/update_dictBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#009cdf"
+                android:text="@string/Update_btn"
+                app:cornerRadius="50dp" />
+
+            <Button
+                android:id="@+id/delete_dictBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/pred"
+                android:text="@string/Delete_btn"
+                app:cornerRadius="50dp" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        >
+
+        <include layout="@layout/main_navigation_drawer" />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
